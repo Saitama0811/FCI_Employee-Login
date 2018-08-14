@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".forgetpass">
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="85dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginRight="85dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Employee ID"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginRight="84dp"
+        android:layout_marginStart="85dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/editText10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText6" />
+
+    <EditText
+        android:id="@+id/editText10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginRight="85dp"
+        android:layout_marginStart="84dp"
+        android:ems="10"
+        android:hint="Phone number"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText9" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="320dp"
+        android:layout_height="29dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="26dp"
+        app:layout_constraintBottom_toTopOf="@+id/editText12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+    <EditText
+        android:id="@+id/editText12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginRight="84dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Your Answer here"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editText13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="96dp"
+        android:layout_marginLeft="97dp"
+        android:layout_marginRight="96dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="24dp"
+        android:onClick="checkDetails"
+        android:text="Get Security Question"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText10" />
+
+    <EditText
+        android:id="@+id/editText13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="84dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginRight="84dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="6dp"
+        android:ems="10"
+        android:hint="New Password"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText12" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="112dp"
+        android:layout_marginLeft="113dp"
+        android:layout_marginRight="112dp"
+        android:layout_marginStart="113dp"
+        android:layout_marginTop="7dp"
+        android:onClick="changepass"
+        android:text="Change Password"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText13" />
+
+</android.support.constraint.ConstraintLayout>

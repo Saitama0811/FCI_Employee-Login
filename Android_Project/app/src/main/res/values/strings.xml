@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FciEmployeeLogin</string>
+
+    <string name="Security">Security Question</string>
+
+    <string-array name="country_arrays">
+        <item>Enter your pet name</item>
+        <item>Enter your birth place</item>
+        <item>Enter your first phone number</item>
+        <item>Enter your first car number</item>
+        <item>Enter your favourite book</item>
+
+    </string-array>
+</resources>
